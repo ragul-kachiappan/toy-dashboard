@@ -1,0 +1,42 @@
+# Root level
+.env
+*.env
+*.env.*
+.vscode/
+__pycache__/
+*.pyc
+
+# Backend (Django, Python, uv)
+backend/.venv/
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/db.sqlite3
+backend/.coverage
+backend/.ruff_cache/
+backend/.DS_Store
+backend/media/
+backend/staticfiles/   # If you use collectstatic
+
+# Frontend (React, Node)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.DS_Store
+
+# Docker
+**/Dockerfile
+**/docker-compose.yml
+
+# OS / Misc
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Deployment/infra (optional)
+deploy/*.pem
+deploy/*.crt
+deploy/*.key
+deploy/.env
